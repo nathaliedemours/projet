@@ -15,7 +15,7 @@ export class AuthGuardService implements CanActivate {
     // infos qd il les a comme la promesse mais n'est pas unique car qd il y a les maj il les traite / boolean seul car peut  être en synchrone
   canActivate (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) : Observable<boolean> | Promise<boolean> | boolean {
     if (this.authService.isAuth) {
-      console.log('jai le droit')
+      console.log('jai le droit de me connecter.......')
       return true
     } else {
       this.router.navigate(['auth'])
