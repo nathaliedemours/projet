@@ -1,0 +1,25 @@
+<!-- <div *ngFor="let nomVoiture of namesList">
+    <app-machine [name]="nomVoiture"></app-machine>
+</div> --> 
+
+
+<!-- <app-machine [name]="voit2"></app-machine>
+<app-machine [name]="voit3" [type]="'moto'"></app-machine> -->
+
+<!-- <app-livre [name]="liv1" [type]="'roman'"></app-livre> -->
+
+<!-- <app-machine *ngFor="let machine of machinesListe; index as i" [name]="machine.name" [type]="machine.type" [isRunning]="machine.isRunning" [index]="i"></app-machine> -->
+<div>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="navbar">
+                <li><a routerLink="auth">Authentification</a></li>
+                <li><a routerLink="machine">Véhicules</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+    <app-render></app-render>
+    </div>
+</div>

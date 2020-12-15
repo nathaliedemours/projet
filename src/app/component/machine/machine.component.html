@@ -1,0 +1,52 @@
+<!-- <div *ngFor="let machine of machinesListe">
+  {{machine.name}} - {{machine.type}} - isRunning? {{machine.isRunning}}
+  
+</div>
+
+<button (click)="allOn()">Switch On All Devices</button>
+<button (click)="allOff()">Switch Off All Devices</button> -->
+<!-- 
+<p>{{name}} - {{type}} - isRunning ? {{isRunning}} 
+    <button (click)="switchOne()">click me</button>
+</p> -->
+
+<p> je suis dans machine component</p>
+<div *ngFor="let machine of machinesListe">
+    <p>{{machine.name}} <br/> {{machine.type}}</p>
+    <a [routerLink]=[machine.id]>Détail</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p>mon nom est : {{name}} - je suis une {{type}}</p>
+
+<input type="text" [(ngModel)]="name">
+
+
+
+ <div *ngFor="let machine of machineListe">
+    
+    <p [ngClass]="{'voiture' : machine.type === 'voiture', 'moto' : machine.type === 'moto'}">{{machine.name}} - {{machine.type | uppercase}} - {{machine.dateSortie | date | uppercase}}</p>
+    
+    <button (click) ="auClic(machine.type)">Bonjour {{i}}</button>
+</div>
+
+ <!-- <p [ngStyle]="{color : getColor()}">mon nom est : {{name}}</p> -->
+
+
+<!-- <p>je parle : {{myName()}}</p>
+<button *ngIf="isActivated()">Bouton!!</button>  -->
+<!-- <button [disabled]="desactivate" (click) ="auClic('bonjour')">A button</button> 
+
+    
+<img src="image{{machine.image}}"/><br> --> 
+
+
